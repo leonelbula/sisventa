@@ -1,0 +1,205 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #f6f8fc;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    width: 280px;
+    min-height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #ececec;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 30px;
+    border-bottom: 1px solid #ececec;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.logo i {
+    font-size: 28px;
+    color: #0d6efd;
+}
+
+.menu {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 8px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #495057;
+    padding: 14px 18px;
+    border-radius: 14px;
+    transition: all .2s;
+}
+
+.menu a:hover {
+    background: #eef4ff;
+    color: #0d6efd;
+}
+
+.menu i {
+    font-size: 20px;
+}
+
+.sidebar-user {
+    margin-top: auto;
+    padding: 25px;
+    border-top: 1px solid #ececec;
+}
+
+.main-content {
+    flex: 1;
+    min-height: 100vh;
+}
+
+.topbar {
+    height: 80px;
+    background: #ffffff;
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.search-box {
+    background: #f8f9fa;
+    width: 350px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.search-box i {
+    color: #adb5bd;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.card {
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 4px 25px rgba(0,0,0,.05);
+}
+
+.alert {
+    border: none;
+    border-radius: 16px;
+}
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    font-weight: 600;
+    color: #6c757d;
+    border-bottom-width: 1px;
+}
+
+.table td,
+.table th {
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.badge {
+    padding: .55rem .8rem;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.input-group-text {
+    border-right: 0;
+}
+
+.input-group .form-control {
+    border-left: 0;
+}
+.form-control,
+.form-select,
+.input-group-text {
+    border-radius: 12px;
+}
+
+.form-control,
+.form-select {
+    min-height: 48px;
+}
+
+textarea.form-control {
+    min-height: 120px;
+}
+
+.form-check-input {
+    width: 3rem;
+    height: 1.5rem;
+}
+.btn {
+    border-radius: 12px;
+    padding: .65rem 1.25rem;
+}
+.product-card {
+    border: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,.06);
+    transition: .2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stock-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 12px;
+    padding: 6px 10px;
+}
