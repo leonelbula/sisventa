@@ -41,7 +41,7 @@
         </li>
 
         <li>
-            <a href="#">
+            <a href="{{route('suppliers.index')}}">
                 <i class="bi bi-truck"></i>
                 Proveedores
             </a>
