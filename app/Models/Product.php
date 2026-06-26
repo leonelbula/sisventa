@@ -54,4 +54,11 @@ class Product extends Model
             Kardex::class
         );
     }
+
+    public function purchaseDetails()
+    {
+        return $this->hasMany(
+            PurchaseDetail::class
+        );
+    }
 }

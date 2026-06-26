@@ -48,7 +48,7 @@
         </li>
 
         <li>
-            <a href="#">
+            <a href="{{route('purchases.index')}}">
                 <i class="bi bi-cart-plus"></i>
                 Compras
             </a>

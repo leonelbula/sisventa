@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\DTOs\Supplier\SupplierDTO;
+use App\DTOs\SupplierDTO;
 use App\Http\Requests\StoreSupplierRequest;
 use App\Http\Requests\UpdateSupplierRequest;
 use App\Models\Supplier;
-use App\Services\Supplier\SupplierService;
+use App\Services\SupplierService;
 
 use Illuminate\Http\Request;
 

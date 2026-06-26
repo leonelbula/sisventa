@@ -3,7 +3,7 @@
 namespace App\Actions\Supplier;
 
 use App\Models\Supplier;
-use App\DTOs\Supplier\SupplierDTO;
+use App\DTOs\SupplierDTO;
 
 class UpdateSupplierAction
 {

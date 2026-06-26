@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Services\Kardex;
+namespace App\Services;
 
 use App\Models\Kardex;
 use App\Models\Product;
-use App\DTOs\Kardex\KardexDTO;
+use App\DTOs\KardexDTO;
 use App\Actions\Kardex\CreateKardexAction;
 use App\Repositories\Contracts\KardexRepositoryInterface;
 use Illuminate\Support\Facades\Auth;

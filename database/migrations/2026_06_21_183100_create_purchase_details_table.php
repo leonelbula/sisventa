@@ -12,9 +12,41 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('purchase_details', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+                $table->id();
+                $table->foreignId(
+                    'purchase_id'
+                )
+                    ->constrained()
+                    ->cascadeOnUpdate()
+                    ->cascadeOnDelete();
+
+                $table->foreignId(
+                    'product_id'
+                )
+                    ->constrained()
+                    ->cascadeOnUpdate()
+                    ->restrictOnDelete();
+
+                $table->unsignedInteger(
+                    'quantity'
+                );
+
+                $table->unsignedBigInteger(
+                    'cost_price'
+                );
+
+                $table->unsignedBigInteger(
+                    'subtotal'
+                );
+
+                $table->timestamps();
+
+                $table->index([
+                    'purchase_id',
+                    'product_id'
+                ]);
+            }
+        );
     }
 
     /**

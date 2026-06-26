@@ -3,7 +3,7 @@
 namespace App\Repositories\Eloquent;
 
 use App\Models\Product;
-use App\DTOs\Product\ProductDTO;
+use App\DTOs\ProductDTO;
 use App\Repositories\Contracts\ProductRepositoryInterface;
 
 class ProductRepository implements ProductRepositoryInterface

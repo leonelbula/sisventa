@@ -10,9 +10,11 @@ use App\Repositories\Contracts\CategoryRepositoryInterface;
 use App\Repositories\Contracts\KardexRepositoryInterface;
 use App\Repositories\Eloquent\CategoryRepository;
 use App\Repositories\Contracts\ProductRepositoryInterface;
+use App\Repositories\Contracts\PurchaseRepositoryInterface;
 use App\Repositories\Contracts\SupplierRepositoryInterface;
 use App\Repositories\Eloquent\KardexRepository;
 use App\Repositories\Eloquent\ProductRepository;
+use App\Repositories\Eloquent\PurchaseRepository;
 use App\Repositories\Eloquent\SupplierRepository;
 
 class AppServiceProvider extends ServiceProvider

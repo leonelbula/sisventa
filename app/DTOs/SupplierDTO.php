@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DTOs\Supplier;
+namespace App\DTOs;
 
 class SupplierDTO
 {

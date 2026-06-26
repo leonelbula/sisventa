@@ -16,10 +16,10 @@ class UpdateProductRequest extends FormRequest
     {
         return true;
     }
-    public function prepareForValidation(): void
+    public function prepareForValidation()
     {
         $this->merge([
-            'status' => $this->boolean('status'),
+            'status' => $this->boolean('status') ? true : false,
         ]);
     }
 

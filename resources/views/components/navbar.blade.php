@@ -30,13 +30,13 @@
         </div>
         <div class="d-flex align-items-center gap-2">
 
-            <a href="{{ route('logout') }}"
-                class="btn btn-light rounded-circle"
-                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-            Salir
-                <i class="bi bi-box-arrow-right"></i>
+        
 
-            </a>
+             <form action="{{ route('logout') }}" method="POST" class="d-inline">
+
+                             @csrf
+                             <button type="submit" class="btn btn-light ">Cerrar <i class="bi bi-box-arrow-right"></i></button>
+                         </form>
 
         </div>
 

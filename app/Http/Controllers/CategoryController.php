@@ -6,8 +6,8 @@ namespace App\Http\Controllers;
 use Throwable;
 use App\Models\Category;
 use App\Support\Flash;
-use App\Services\Category\CategoryService;
-use App\DTOs\Category\CategoryDTO;
+use App\Services\CategoryService;
+use App\DTOs\CategoryDTO;
 use App\Http\Requests\CategoryStoreRequest;
 use App\Http\Requests\CategoryUpdateRequest;
 use App\Repositories\Contracts\CategoryRepositoryInterface;
@@ -62,7 +62,7 @@ class CategoryController extends Controller
             $this->categoryService->store($categoryDTO);
 
             return redirect()
-                ->route('categories.index')
+                ->route('categories.create')
                 ->with(
                     'success',
                     'La categoría se ha creado exitosamente.'

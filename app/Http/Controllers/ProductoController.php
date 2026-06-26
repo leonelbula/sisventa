@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\Product\ProductService;
-use App\Services\Category\CategoryService;
-use App\DTOs\Product\ProductDTO;
+use App\Services\ProductService;
+use App\Services\CategoryService;
+use App\DTOs\ProductDTO;
 use App\Models\Category;
 use App\Models\Product;
 use App\Http\Requests\Product\StoreProductRequest;
 use App\Http\Requests\Product\UpdateProductRequest;
-use App\Services\Kardex\KardexService;
+use App\Services\KardexService;
 
 class ProductoController extends Controller
 {
@@ -113,7 +113,7 @@ class ProductoController extends Controller
     /**
      * Actualizar
      */
-    public function update(UpdateProductRequest $request, Product $product)
+    public function update(Request $request, Product $product)
     {
         $dto = ProductDTO::fromRequest($request);
 

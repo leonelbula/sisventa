@@ -2,7 +2,7 @@
 namespace App\Actions\Category;
 
 use App\Models\Category;
-use App\DTOs\Category\CategoryDTO;
+use App\DTOs\CategoryDTO;
 use App\Repositories\Contracts\CategoryRepositoryInterface;
 
 class DeleteCategoryAction

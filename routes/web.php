@@ -4,7 +4,10 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\PurchaseCartController;
+use App\Http\Controllers\PurchaseController;
 use App\Http\Controllers\SupplierController;
+use Illuminate\Database\Eloquent\Prunable;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,6 +26,27 @@ Route::middleware('auth')->group(function () {
     Route::resource('products', ProductoController::class);
     Route::post('products/bulk-destroy', [ProductoController::class, 'bulkDestroy'])->name('products.bulkDestroy');
     Route::resource('suppliers', SupplierController::class);
+    Route::resource('purchases', PurchaseController::class);
+
+    Route::prefix('purchase-cart')
+        ->name('purchase-cart.')
+        ->group(function () {
+
+            Route::get(
+                '/',
+                [PurchaseCartController::class, 'index']
+            );
+
+            Route::post(
+                '/',
+                [PurchaseCartController::class, 'store']
+            );
+
+            Route::delete(
+                '/{id}',
+                [PurchaseCartController::class, 'destroy']
+            );
+        });
 });
 
 require __DIR__ . '/auth.php';

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\Category;
+namespace App\Services;
 
 use Exception;
 use Illuminate\Support\Facades\DB;
 use App\Models\Category;
-use App\DTOs\Category\CategoryDTO;
+use App\DTOs\CategoryDTO;
 use App\Actions\Category\CreateCategoryAction;
 use App\Actions\Category\UpdateCategoryAction;
 use App\Actions\Category\DeleteCategoryAction;

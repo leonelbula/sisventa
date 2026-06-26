@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Services\Supplier;
+namespace App\Services;
 
 use Throwable;
 use App\Models\Supplier;
-use App\DTOs\Supplier\SupplierDTO;
+use App\DTOs\SupplierDTO;
 use Illuminate\Support\Facades\DB;
 use App\Actions\Supplier\CreateSupplierAction;
 use App\Actions\Supplier\DeleteSupplierAction;

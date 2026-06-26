@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\Product;
+namespace App\Services;
 
 use Exception;
 use Illuminate\Support\Facades\DB;
 use App\Models\Product;
-use App\DTOs\Product\ProductDTO;
+use App\DTOs\ProductDTO;
 use App\Actions\Product\CreateProductAction;
 use App\Actions\Product\UpdateProductAction;
 use App\Actions\Product\DeleteProductAction;

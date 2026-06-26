@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DTOs\Kardex;
+namespace App\DTOs;
 
 class KardexDTO
 {

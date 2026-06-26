@@ -2,7 +2,7 @@
 namespace App\Repositories\Contracts;
 
 use App\Models\Category;
-use App\DTOs\Category\CategoryDTO;
+use App\DTOs\CategoryDTO;
 
 interface CategoryRepositoryInterface
 {

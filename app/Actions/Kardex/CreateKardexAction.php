@@ -2,7 +2,7 @@
 
 namespace App\Actions\Kardex;
 
-use App\DTOs\Kardex\KardexDTO;
+use App\DTOs\KardexDTO;
 use App\Models\Kardex;
 
 

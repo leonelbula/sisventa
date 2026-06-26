@@ -2,7 +2,7 @@
 
 namespace App\Actions\Product;
 
-use App\DTOs\Product\ProductDTO;
+use App\DTOs\ProductDTO;
 use App\Repositories\Eloquent\ProductRepository;
 
 class CreateProductAction

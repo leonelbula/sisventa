@@ -179,8 +179,10 @@
                     <input type="number" name="stock" class="form-control"
                         value="{{ old('stock', $product->stock ?? 0) }}"
                          @disabled($product->exists)>
+                        
                    
                     @if ($product->exists)
+                     <input type="hidden" name="stock" value="{{$product->stock}}">
                         <small class="text-muted">
                             El stock se administra desde Compras,
                             Ventas y Ajustes de Inventario.
